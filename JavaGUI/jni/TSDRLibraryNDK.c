@@ -304,8 +304,8 @@ JNIEXPORT void JNICALL Java_martin_tempest_core_TSDRLibrary_nativeStart (JNIEnv 
 	if ((*env)->GetObjectRefType(env, context->obj) == JNIGlobalRefType)
 		(*env)->DeleteGlobalRef(env, context->obj);
 
-	free(context);
 	if (context->pixels != NULL) free(context->pixels);
+	free(context);
 }
 
 JNIEXPORT void JNICALL Java_martin_tempest_core_TSDRLibrary_stop (JNIEnv * env, jobject obj) {
