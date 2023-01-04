@@ -24,6 +24,7 @@ endif
 # Make all
 all :
 	@$(MAKE) -C TSDRPlugin_RawFile/ all JAVA_HOME=$(JAVA_HOME)
+	@$(MAKE) -C TSDRPlugin_Soapy/ all JAVA_HOME=$(JAVA_HOME)
 ifeq ($(OSNAME),WINDOWS)
 	@$(MAKE) -C TSDRPlugin_ExtIO/ all
 endif
@@ -32,6 +33,7 @@ endif
 
 # Clean artifacts
 clean :
+	@$(MAKE) -C TSDRPlugin_Soapy/ clean
 	@$(MAKE) -C TSDRPlugin_RawFile/ clean
 	@$(MAKE) -C TSDRPlugin_Mirics/ clean
 	@$(MAKE) -C TSDRPlugin_ExtIO/ clean

@@ -39,6 +39,7 @@ public class TSDRSource {
 		new TSDRFileSource(),
 		new TSDRMiricsSource(),
 		new TSDRUHDSource(),
+		new TSDRSoapySource(),
 		new TSDRExtIOSource(),
 		new TSDRSDRPlaySource(),
 	};

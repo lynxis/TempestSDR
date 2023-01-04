@@ -1,0 +1,6 @@
+This is a plugin that supports the soapy driver for everything. In order to compile it, you need to have soapy installed and the corresponding libraries.
+
+Compile it with
+
+    make all
+	
